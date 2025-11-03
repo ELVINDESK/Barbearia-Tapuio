@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(153, 142, 142);
+
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header .btn-contato button, .hero-site button{
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 12px;
+}
+
+/*estilo header*/
+header {
+    width: 100%;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 70px;
+    border-radius: 12px;
+}
+
+header .menu-desktop nav ul {
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu-desktop nav a:hover {
+    transform: scale(1.2);
+    transition: .2s;
+
+}
+
+header .btn-contato button{
+    width: 140px;
+    height: 50px;
+}
+
+
+header .btn-contato button:hover, .hero-site button:hover{
+    background-color: aliceblue;
+    color: #000;
+    transition: .8s;
+    box-shadow:  10px 5px 52px rgb(230, 225, 225);
+}
+
+/*Estlo hero*/
+section.hero-site{
+    height: 98vh;
+    background-image: url(img/Tapuio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;background-position: center;
+    color: #fff;
+}
+
+.hero-site .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1{
+    font-size: 3em;
+    line-height: 70px;
+    font-weight: 200;
+}
+
+.hero-site .txt-hero h1 span{
+    display: block;
+    font-weight: 800;
+}
+
+.hero-site .txt-hero p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.hero-site .txt-hero span{
+    display: block;
+}
+
+.hero-site button{
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
