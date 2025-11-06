@@ -1,3 +1,4 @@
+/* #COMEÇO DO CSS---------------------------------$$$$$$$$$$$$$$$$$$$$ */
 * {
     margin: 0;
     padding: 0;
@@ -5,17 +6,24 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* BODY---------------------------------$$$$$$$$$$$$$$$$$$$$ */
 body {
-    background-color: rgb(153, 142, 142);
+    background-color: #21274881;
+    height: 8vh;
 
 }
 
+/* TODA INTERFACE DO SITE---------------------------------$$$$$$$$$$$$$$$$$$$$ */
 .interface {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 5%;
 }
 
-header .btn-contato button, .hero-site button{
+/* HEADER BUTTONS---------------------------------$$$$$$$$$$$$$$$$$$$$ */
+header .btn-contato button,
+.hero-site button,
+.Barber button {
     width: 140px;
     height: 50px;
     font-size: 18px;
@@ -26,26 +34,60 @@ header .btn-contato button, .hero-site button{
     border-radius: 12px;
 }
 
-/*estilo header*/
+
+/* ESTILO DO HEADER---------------------------------$$$$$$$$$$$$$$$$$$$$ */
 header {
     width: 100%;
     padding: 40px 0;
     position: fixed;
     top: 0;
     left: 0;
+
+    transition: .5s;
+    z-index: 5;
 }
 
+/* HEADER INTERFACE----------------------------------$$$$$$$$$$$$$$$$$$$$ */
 header .interface {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* HEADER LOGO----------------------------------$$$$$$$$$$$$$$$$$$$$ */
 header .logo img {
     max-width: 70px;
     border-radius: 12px;
 }
 
+/* ESTILO DO MENU DINAMICO----------------------------------$$$$$$$$$$$$$$$$$$$$ */
+header.rolar {
+    background-color: #020202;
+    padding: 20px 0;
+    box-shadow: 0 0 100px #020202e0;
+}
+
+header.rolar .menu-desktop nav ul li a {
+    color: #ede5e5;
+}
+
+header.rolar .btn-contato button {
+    border: 1px solid #cfc6c6;
+    color: #f1e8e8;
+}
+
+header.rolar .btn-contato button:hover {
+    background-color: #3a3838;
+    color: #fff;
+}
+
+/* FIM --------------------------------------- FIM-----------------------------------$$$$$$$$$$$$$$$$$$$$ */
+
+
+
+
+
+/* ESTILO DO MENU DESKTOP---------------------------------------------$$$$$$$$$$$$$$$$$$ */
 header .menu-desktop nav ul {
     list-style-type: none;
 }
@@ -56,9 +98,10 @@ header .menu-desktop nav ul li {
 }
 
 header .menu-desktop nav ul li a {
-    color: aliceblue;
+    color: rgb(248, 252, 255);
     text-decoration: none;
     display: inline-block;
+    font-size: 20px;
 }
 
 .menu-desktop nav a:hover {
@@ -67,57 +110,455 @@ header .menu-desktop nav ul li a {
 
 }
 
-header .btn-contato button{
+/* FIM-------------------FIM------------------------------------------$$$$$$$$$$$$$$$ */
+
+
+/*  */
+
+
+/* ESTILO DO BOTAO DO MENU MOBILE----------------------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$ */
+header .btn-menu-mob {
+    display: none;
+    position: relative;
+    z-index: 88888888888888888;
+}
+
+header .btn-menu-mob div {
+    background-color: #000000;
+    height: 3px;
+    margin: 10px 0;
+    transition: .2s;
+}
+
+
+header .btn-menu-mob .line-menumob-1 {
+    width: 30px;
+}
+
+header .btn-menu-mob .line-menumob-2 {
+    width: 30px;
+}
+
+header.rolar .btn-menu-mob div {
+    background-color: #fffafa;
+}
+
+header .btn-menu-mob .line-menumob-1.ativo1 {
+    transform: rotate(45deg) translate(30%);
+    background-color: #fff;
+}
+
+header .btn-menu-mob .line-menumob-2.ativo2 {
+    transform: rotate(-45deg) translate(30%);
+    width: 30px;
+    background-color: #fff;
+}
+
+header .btn-contato button {
     width: 140px;
     height: 50px;
 }
 
+/* FIM- 0------------------------------------------$$$$$$$$$$$ */
 
-header .btn-contato button:hover, .hero-site button:hover{
+
+
+/*  */
+
+
+
+/* ESTILO MENU MOBILE------------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+header .menu-mobile {
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0,  0.2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: none;
+    z-index: 1001;
+    backdrop-filter: blur(20px);
+    display: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    overflow: hidden;
+    transition: .6s;
+}
+
+header .menu-mobile nav {
+    width: 100%;
+}
+
+header .menu-mobile nav ul {
+    list-style-type: none;
+}
+
+header .menu-mobile nav a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 0;
+    display: block;
+    transition: .5s;
+}
+
+
+header .menu-mobile nav a:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 20px #fff;
+}
+
+header .menu-mobile.abrir {
+    width: 100%;
+    height: 100vh;
+}
+
+body.no-overflow {
+    overflow: hidden;
+}
+
+header .btn-contato button:hover,
+.hero-site button:hover,
+.Barber button:hover {
     background-color: aliceblue;
     color: #000;
     transition: .8s;
-    box-shadow:  10px 5px 52px rgb(230, 225, 225);
+    box-shadow: 10px 5px 52px rgb(26, 24, 24);
 }
 
-/*Estlo hero*/
-section.hero-site{
-    height: 98vh;
-    background-image: url(img/Tapuio.jpg);
+/* FIM- 01$------------------------------------------------$$$$$$$ */
+
+
+/*  */
+
+
+/* Estlo hero--------------------------------------------$$$$$$$$$$$$$$$$$$$$$$$$ */
+section.hero-site {
+    height: 100vh;
+    background-image: url(img/Barbearia\ tapuio-hero.png);
     background-repeat: no-repeat;
-    background-size: cover;background-position: center;
-    color: #fff;
+    background-size: cover;
+    background-position: center;
+    color: #edf1f5af;
+    
 }
 
-.hero-site .interface{
+.hero-site .interface {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-.hero-site .txt-hero h1{
+.hero-site .txt-hero h1 {
     font-size: 3em;
     line-height: 70px;
-    font-weight: 200;
+    font-weight: 400;
 }
 
-.hero-site .txt-hero h1 span{
-    display: block;
+.hero-site .txt-hero h1 span {
     font-weight: 800;
 }
 
-.hero-site .txt-hero p{
+.hero-site .txt-hero p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+    color: rgb(255, 255, 255);;
+}
+
+.hero-site button {
+    width: 220px;
+    height: 70px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.txt-hero {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* estilo de imagens---------------------------------------------------------$$$$$$$$$$$$$$$$ */
+section.vantagens {
+    padding: 80px 0;
+}
+
+.vantagens .itens-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.vantagens .itens-container .img-itens img {
+    max-width: 420px;
+}
+
+.vantagens .itens-container .txt-titulo h3 {
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.itens-container .txt-titulo h3 span {
+    font-weight: 300;
+}
+
+/* estilo dos botões de contato--------------------------------------------$$$$$$$$$$$$$$$$$$$$$$ */
+section.base-contato {
+    background-color: #8a8989;
+    padding: 80px 0;
+}
+
+.txt-contato,
+.icons-contato {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+
+.base-contato .txt-contato h3 {
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.base-contato .txt-contato h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.base-contato .icons-contato a {
+    text-decoration: none;
+}
+
+.base-contato .icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+
+    background-color: transparent;
+    border: 2px salmon #000;
+    cursor: pointer;
+
+    transition: .5s;
+    border-radius: 10px ;
+}
+
+.base-contato .icons-contato button i {
+    font-size: 20px;
+}
+
+.base-contato .icons-contato button:hover {
+    background-color: #1d4ec05b;
+}
+
+.base-contato .icons-contato button:hover i,
+.base-contato .icons-contato button:hover p {
+    color: #ffffff;
+}
+
+/* estilo secao assinatura---------------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+section.Barber {
+    height: 600px;
+
+    background-image: url(img/borrao-de-luxo-abstrato-gradiente-de-cor-cinza-usado-como-parede-de-estudio-de-fundo-para-exibir-seus-produtos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.Barber>.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000e0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.Barber>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.Barber h3 {
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+.Barber h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.Barber p {
+    margin: 20px 0;
     font-size: 20px;
     font-weight: 300;
+}
+
+.Barber button {
+    width: 220px;
+    height: 60px;
+}
+
+/* Como funciona-------------------------------------------------------$$$$$$$$$$$$$$$$$$ */
+section.Como-funciona {
+    padding: 80px 0;
+}
+
+.txt-funciona,
+.instrucoes {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+.Como-funciona .txt-funciona {
+    position: sticky;
+    top: 50%;
+    padding: 30px;
+}
+
+.Como-funciona .txt-funciona h3 {
+    font-size: 4em;
+    line-height: 60px;
+    font-weight: 300;
+}
+
+.Como-funciona .txt-funciona h3 span {
+    display: block;
+    font-weight: 600;
+}
+
+.instrucoes .instru-box:hover {
+    background-color: #79acff2a;
+    cursor: pointer;
+}
+
+.instrucoes .instru-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 12px;
+
+    margin-bottom: 40px;
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+.instrucoes .instru-box img {
+    max-width: 100px;
+}
+
+.instrucoes .instru-box h4 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.instrucoes .instru-box h4 span {
+    font-weight: 300;
+}
+
+.instrucoes .instru-box {
+    line-height: 20px;
+}
+
+/* estilo roda pe--------------------------------------------------------------$$$$$$$$$$$$$$$$$$$$$ */
+footer {
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .top-footer button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #a4a4a4;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+footer .top-footer button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+footer .middel-footer {
     margin: 20px 0;
 }
 
-.hero-site .txt-hero span{
-    display: block;
+
+footer .middel-footer a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
 }
 
-.hero-site button{
-    width: 220px;
-    height: 60px;
+footer .middel-footer a:hover {
     font-size: 20px;
 }
+
+footer .bottom-footer p {
+    color: #fff;
+    margin-top: 22px;
+}
+
+footer .bottom-footer {
+    border-top: 2px solid #fff;
+}
+
+.zoom{
+    width: 300px;
+    transition: 0.4s;   
+    cursor: pointer;
+}
+
+.zoom:hover{
+    transform: scale(1.2);
+}
+
+.logo img{
+    transition: .4s;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+}
+/* fim do codigo-----------------------$$$$$$$$ */
