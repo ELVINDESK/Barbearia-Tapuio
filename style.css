@@ -42,7 +42,7 @@ header .logo img {
     width: 70px;
     height: 70px;
     border-radius: 12px;
-    box-shadow: 9px 4px 0 rgb(99, 99, 99);
+    box-shadow: 10px 9px 0 rgb(47, 47, 47);
     cursor: pointer;
 }
 
@@ -219,7 +219,6 @@ section.hero-site {
 .hero-site .txt-hero h1 span {
     display: block;
     font-weight: 500;
-    margin-top: 50px;
 }
 
 .hero-site .txt-hero p {
@@ -232,7 +231,6 @@ section.hero-site {
 }
 
 .hero-site button {
-    margin-left: 25px;
     width: 250px;
     height: 70px;
     font-size: 18px;
