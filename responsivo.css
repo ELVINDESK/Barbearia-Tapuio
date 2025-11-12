@@ -8,10 +8,8 @@
     header .btn-menu-mob {
         display: block;
     }
-}
 
-@media screen and (max-width: 878px) {
-    .hero-site .txt-hero h1 {
+      .hero-site .txt-hero h1 {
         font-size: 4em;
         line-height: 50px;
         font-weight: 300;
@@ -144,5 +142,30 @@
     font-weight: 500;
 }
 
+.interface{
+    max-width: 100%;
+    padding: 0 5%;
+}
+
+.zoom-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.zoom-container img,
+.na-tapuio .itens-container .img-itens img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+}
+
+@media screen and (max-width: 878px) {
 
 }

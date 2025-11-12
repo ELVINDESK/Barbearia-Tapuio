@@ -127,6 +127,7 @@ header .btn-menu-mob .line-menu-mob-2.ativo2 {
 }
 
 header .menu-mobile {
+    position: fixed;
     width: 0;
     height: 0;
     background-color: rgba(0, 0, 0, 0.518);
@@ -208,9 +209,10 @@ section.hero-site {
 
 .hero-site .txt-hero h1 {
     padding: 20px;
-    font-size: 6em;
+    font-size: 4em;
     line-height: 70px;
     font-weight: 500;
+    margin-top: 12px;
 }
 
 .hero-site .txt-hero h1 span {
@@ -470,6 +472,11 @@ section.agendar {
     height: 70px;
     background-color: #000000;
     padding: 80px 0;
+    color: #fff;
+}
+
+.agendar h3{
+    padding: 10px;
 }
 
 .agendar button {
