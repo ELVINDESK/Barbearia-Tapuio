@@ -1,93 +1,69 @@
-/* #COMEÇO DO CSS---------------------------------$$$$$$$$$$$$$$$$$$$$ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
-/* BODY---------------------------------$$$$$$$$$$$$$$$$$$$$ */
 body {
-    background-color: #21274881;
-    height: 8vh;
-
+    background-color: rgb(90, 90, 90);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    scroll-behavior: auto;
 }
 
-/* TODA INTERFACE DO SITE---------------------------------$$$$$$$$$$$$$$$$$$$$ */
 .interface {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 4%;
 }
 
-/* HEADER BUTTONS---------------------------------$$$$$$$$$$$$$$$$$$$$ */
-header .btn-contato button,
-.hero-site button,
-.Barber button {
-    width: 140px;
-    height: 50px;
-    font-size: 18px;
-    background-color: transparent;
-    border: 2px solid white;
-    cursor: pointer;
-    color: aliceblue;
-    border-radius: 12px;
-}
-
-
-/* ESTILO DO HEADER---------------------------------$$$$$$$$$$$$$$$$$$$$ */
 header {
     width: 100%;
     padding: 40px 0;
     position: fixed;
     top: 0;
     left: 0;
-
-    transition: .5s;
+    transition: .7s;
     z-index: 5;
 }
 
-/* HEADER INTERFACE----------------------------------$$$$$$$$$$$$$$$$$$$$ */
 header .interface {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* HEADER LOGO----------------------------------$$$$$$$$$$$$$$$$$$$$ */
 header .logo img {
-    max-width: 70px;
+    width: 70px;
+    height: 70px;
     border-radius: 12px;
+    box-shadow: 9px 4px 0 rgb(99, 99, 99);
+    cursor: pointer;
 }
 
-/* ESTILO DO MENU DINAMICO----------------------------------$$$$$$$$$$$$$$$$$$$$ */
 header.rolar {
-    background-color: #020202;
+    background-color: #000000da;
     padding: 20px 0;
-    box-shadow: 0 0 100px #020202e0;
 }
 
 header.rolar .menu-desktop nav ul li a {
-    color: #ede5e5;
+    color: #ffffff;
 }
 
 header.rolar .btn-contato button {
-    border: 1px solid #cfc6c6;
-    color: #f1e8e8;
+    border: 1px solid #fff;
+    color: #ffffff;
+    border-radius: 12px;
 }
 
 header.rolar .btn-contato button:hover {
-    background-color: #3a3838;
-    color: #fff;
+    background-color: #717171;
 }
 
-/* FIM --------------------------------------- FIM-----------------------------------$$$$$$$$$$$$$$$$$$$$ */
-
-
-
-
-
-/* ESTILO DO MENU DESKTOP---------------------------------------------$$$$$$$$$$$$$$$$$$ */
 header .menu-desktop nav ul {
     list-style-type: none;
 }
@@ -98,99 +74,71 @@ header .menu-desktop nav ul li {
 }
 
 header .menu-desktop nav ul li a {
-    color: rgb(248, 252, 255);
+    color: #fff;
     text-decoration: none;
     display: inline-block;
+    transition: 0.1s;
+    font-size: 19px;
+    padding: 0;
+
+}
+
+header .menu-desktop nav ul li a:hover {
+    transform: scale(1.10);
     font-size: 20px;
-}
+    color: #717171;
 
-.menu-desktop nav a:hover {
-    transform: scale(1.2);
-    transition: .2s;
-
-}
-
-/* FIM-------------------FIM------------------------------------------$$$$$$$$$$$$$$$ */
-
-
-/*  */
-
-
-/* ESTILO DO BOTAO DO MENU MOBILE----------------------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$ */
-header .btn-menu-mob {
-    display: none;
-    position: relative;
-    z-index: 88888888888888888;
-}
-
-header .btn-menu-mob div {
-    background-color: #000000;
-    height: 3px;
-    margin: 10px 0;
-    transition: .2s;
-}
-
-
-header .btn-menu-mob .line-menumob-1 {
-    width: 30px;
-}
-
-header .btn-menu-mob .line-menumob-2 {
-    width: 30px;
-}
-
-header.rolar .btn-menu-mob div {
-    background-color: #fffafa;
-}
-
-header .btn-menu-mob .line-menumob-1.ativo1 {
-    transform: rotate(45deg) translate(30%);
-    background-color: #fff;
-}
-
-header .btn-menu-mob .line-menumob-2.ativo2 {
-    transform: rotate(-45deg) translate(30%);
-    width: 30px;
-    background-color: #fff;
 }
 
 header .btn-contato button {
     width: 140px;
     height: 50px;
+    border-radius: 12px;
 }
 
-/* FIM- 0------------------------------------------$$$$$$$$$$$ */
+header .btn-menu-mob {
+    display: none;
+    position: relative;
+    z-index: 5;
+}
 
+header .btn-menu-mob div {
+    background-color: #fff;
+    height: 3px;
+    margin: 10px 0;
+    transition: .2s;
+}
 
+header .btn-menu-mob .line-menu-mob-1 {
+    width: 30px;
+}
 
-/*  */
+header .btn-menu-mob .line-menu-mob-2 {
+    width: 20px;
+}
 
+header .btn-menu-mob .line-menu-mob-1.ativo1 {
+    transform: rotate(45deg) translate(30%);
+}
 
+header .btn-menu-mob .line-menu-mob-2.ativo2 {
+    transform: rotate(-45deg) translate(30%);
+    width: 30px;
+}
 
-/* ESTILO MENU MOBILE------------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 header .menu-mobile {
     width: 0;
     height: 0;
-    background-color: rgba(0, 0, 0,  0.2);
-    position: fixed;
+    background-color: rgba(0, 0, 0, 0.518);
+    position: absolute;
     top: 0;
     right: 0;
-    border: none;
-    z-index: 1001;
-    backdrop-filter: blur(20px);
-    display: none;
-
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
-
     overflow: hidden;
-    transition: .6s;
-}
-
-header .menu-mobile nav {
-    width: 100%;
+    transition: .5s;
 }
 
 header .menu-mobile nav ul {
@@ -204,13 +152,17 @@ header .menu-mobile nav a {
     padding: 20px 0;
     display: block;
     transition: .5s;
+    border-radius: 20px;
 }
 
-
 header .menu-mobile nav a:hover {
-    background-color: #fff;
-    color: #000;
-    box-shadow: 0 0 20px #fff;
+    background-color: #333333c3;
+    color: #ffffff;
+    box-shadow: 0 0 20px #000000;
+}
+
+header .menu-mobile nav {
+    width: 100%;
 }
 
 header .menu-mobile.abrir {
@@ -222,30 +174,30 @@ body.no-overflow {
     overflow: hidden;
 }
 
-header .btn-contato button:hover,
-.hero-site button:hover,
-.Barber button:hover {
-    background-color: aliceblue;
-    color: #000;
-    transition: .8s;
-    box-shadow: 10px 5px 52px rgb(26, 24, 24);
+header .btn-contato button,
+.hero-site button {
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 12px;
 }
 
-/* FIM- 01$------------------------------------------------$$$$$$$ */
+header .btn-contato button:hover,
+.hero-site button:hover {
+    background-color: #717171;
+    color: black;
+}
 
-
-/*  */
-
-
-/* Estlo hero--------------------------------------------$$$$$$$$$$$$$$$$$$$$$$$$ */
 section.hero-site {
     height: 100vh;
-    background-image: url(img/Barbearia\ tapuio-hero.png);
+    background-image: url(img/barbearia-tapuio.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: #edf1f5af;
-    
+    color: #fff;
 }
 
 .hero-site .interface {
@@ -255,40 +207,40 @@ section.hero-site {
 }
 
 .hero-site .txt-hero h1 {
-    font-size: 3em;
+    padding: 20px;
+    font-size: 4em;
     line-height: 70px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .hero-site .txt-hero h1 span {
-    font-weight: 800;
+    display: block;
+    font-weight: 500;
 }
 
 .hero-site .txt-hero p {
     font-size: 20px;
-    font-weight: 500;
-    margin: 20px 0;
-    color: rgb(255, 255, 255);;
+    font-weight: 400;
+}
+
+.hero-site .txt-hero p span {
+    display: block;
 }
 
 .hero-site button {
+    margin-left: 25px;
     width: 220px;
-    height: 70px;
-    font-size: 20px;
-    margin-top: 20px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 12px;
 }
 
-.txt-hero {
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* estilo de imagens---------------------------------------------------------$$$$$$$$$$$$$$$$ */
-section.vantagens {
+section.na-tapuio {
     padding: 80px 0;
+    background: linear-gradient(100deg, #d3d3d3, rgba(119, 180, 255, 0.582));
 }
 
-.vantagens .itens-container {
+.na-tapuio .itens-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -296,23 +248,37 @@ section.vantagens {
     margin-bottom: 60px;
 }
 
-.vantagens .itens-container .img-itens img {
+.na-tapuio .itens-container .img-itens img {
     max-width: 420px;
+    border-radius: 15px;
+    box-shadow: 10px 12px 0 cornflowerblue;
 }
 
-.vantagens .itens-container .txt-titulo h3 {
+.na-tapuio .itens-container .txt-itens h3 {
     font-size: 3em;
     line-height: 50px;
     margin-bottom: 20px;
 }
 
-.itens-container .txt-titulo h3 span {
-    font-weight: 300;
+.txt-itens p {
+    padding: 20px;
+    font-weight: 500px;
 }
 
-/* estilo dos botões de contato--------------------------------------------$$$$$$$$$$$$$$$$$$$$$$ */
-section.base-contato {
-    background-color: #8a8989;
+.zoom-container img {
+    width: 450;
+    height: 100%;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.zoom-container img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+section.contato {
+    background: linear-gradient(100deg, #d3d3d3, rgba(119, 180, 255, 0.582));
     padding: 80px 0;
 }
 
@@ -324,190 +290,228 @@ section.base-contato {
     vertical-align: middle;
 }
 
-
-.base-contato .txt-contato h3 {
+.contato .txt-contato h3 {
     font-size: 2.5em;
     line-height: 50px;
-    font-weight: 300;
+    font-weight: 400px;
     margin-bottom: 20px;
 }
 
-.base-contato .txt-contato h3 span {
+.contato .txt-contato h3 span {
     display: block;
     font-weight: 700;
 }
 
-.base-contato .icons-contato a {
+.contato .icons-contato a {
     text-decoration: none;
 }
 
-.base-contato .icons-contato button {
+.contato .icons-contato button {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     width: 60%;
     height: 60px;
     margin: 0 auto 20px auto;
+    align-items: center;
+    justify-content: space-between;
     padding: 0 60px;
-
     background-color: transparent;
-    border: 2px salmon #000;
+    border: 2px solid #2f2b2b;
     cursor: pointer;
-
     transition: .5s;
-    border-radius: 10px ;
+    border-radius: 12px;
 }
 
-.base-contato .icons-contato button i {
-    font-size: 20px;
+.contato .icons-contato button i {
+    font-size: 30px;
 }
 
-.base-contato .icons-contato button:hover {
-    background-color: #1d4ec05b;
+.contato .icons-contato button:hover {
+    background-color: black;
 }
 
-.base-contato .icons-contato button:hover i,
-.base-contato .icons-contato button:hover p {
-    color: #ffffff;
+.contato .icons-contato button:hover i,
+.contato .icons-contato button:hover p {
+    color: #fff;
 }
 
-/* estilo secao assinatura---------------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-section.Barber {
-    height: 600px;
-
-    background-image: url(img/borrao-de-luxo-abstrato-gradiente-de-cor-cinza-usado-como-parede-de-estudio-de-fundo-para-exibir-seus-produtos.jpg);
+section.assinatura {
+    height: 700px;
+    background-image: url(img/IMG_8006.JPG);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     position: relative;
     color: #fff;
-    text-align: center;
+    font-weight: 700;
 }
 
-.Barber>.overlay {
+.assinatura>.overlay {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #000000e0;
+    background-color: rgba(0, 0, 0, 0.641);
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
 }
 
-.Barber>.interface {
+.assinatura>.interface {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     height: 100%;
+    flex-direction: column;
     z-index: 2;
     position: relative;
 }
 
-.Barber h3 {
+.assinatura h3 {
     font-size: 3em;
     line-height: 50px;
-    font-weight: 200;
+    font-weight: 800;
 }
 
-.Barber h3 span {
-    display: block;
+.assinatura h3 span {
+    line-height: 50px;
     font-weight: 700;
 }
 
-.Barber p {
+.assinatura p {
     margin: 20px 0;
     font-size: 20px;
-    font-weight: 300;
+    text-align: center;
 }
 
-.Barber button {
-    width: 220px;
-    height: 60px;
+.assinatura button {
+    background-color: transparent;
+    font-size: 18px;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    width: 200px;
+    height: 58px;
+    border-radius: 12px;
 }
 
-/* Como funciona-------------------------------------------------------$$$$$$$$$$$$$$$$$$ */
-section.Como-funciona {
+.assinatura button:hover {
+    background-color: #717171;
+    color: black;
+}
+
+section.sobre-tapuio {
     padding: 80px 0;
+    background: linear-gradient(100deg, #d3d3d3, rgba(119, 180, 255, 0.582));
 }
 
-.txt-funciona,
-.instrucoes {
+.txt-sobre,
+.sobre-texto {
     display: inline-block;
     width: 50%;
     margin-right: -4px;
     vertical-align: top;
 }
 
-.Como-funciona .txt-funciona {
+.sobre-tapuio .txt-sobre {
     position: sticky;
     top: 50%;
-    padding: 30px;
 }
 
-.Como-funciona .txt-funciona h3 {
+.sobre-tapuio .txt-sobre h3 {
     font-size: 4em;
     line-height: 60px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
-.Como-funciona .txt-funciona h3 span {
+
+
+.sobre-tapuio .txt-sobre h3 span {
     display: block;
-    font-weight: 600;
+    font-weight: 700;
 }
 
-.instrucoes .instru-box:hover {
-    background-color: #79acff2a;
-    cursor: pointer;
-}
-
-.instrucoes .instru-box {
+.sobre-texto .sobre-box {
     display: flex;
     align-items: center;
     gap: 20px;
-    border-radius: 12px;
-
     margin-bottom: 40px;
     border: 2px solid #000;
     padding: 20px;
+    border-radius: 12px;
 }
 
-.instrucoes .instru-box img {
+.sobre-texto .sobre-box:hover {
+    background-color: #ffffff6e;
+    cursor: pointer;
+}
+
+.sobre-texto .sobre-box img {
     max-width: 100px;
+    border-radius: 10px;
+    box-shadow: 12px 10px 0 rgb(48, 48, 48);
 }
 
-.instrucoes .instru-box h4 {
+.sobre-texto .sobre-box h4 {
     font-size: 1.5em;
-    font-weight: 800;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-.instrucoes .instru-box h4 span {
-    font-weight: 300;
-}
-
-.instrucoes .instru-box {
+.sobre-texto .sobre-box p {
+    font-size: 20px;
     line-height: 20px;
+    text-align: center;
 }
 
-/* estilo roda pe--------------------------------------------------------------$$$$$$$$$$$$$$$$$$$$$ */
-footer {
+section.agendar {
+    height: 70px;
     background-color: #000000;
+    padding: 80px 0;
+}
+
+.agendar button {
+    background-color: transparent;
+    font-size: 18px;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    width: 200px;
+    height: 58px;
+    border-radius: 12px;
+}
+
+.agendar>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+}
+
+.agendar button:hover {
+    background-color: #717171;
+    color: black;
+}
+
+footer {
+    background-color: #0c0c0c;
     width: 100%;
     text-align: center;
-    padding: 30px 0;
+    color: #fff;
+    padding: 12px;
 }
 
 footer .top-footer button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid#fff;
     background-color: transparent;
-    color: #a4a4a4;
+    color: #fff;
     font-size: 24px;
     cursor: pointer;
     margin: 0 10px;
@@ -519,46 +523,40 @@ footer .top-footer button:hover {
     color: #000;
 }
 
-
-footer .middel-footer {
-    margin: 20px 0;
+footer .middle-footer {
+    margin: 10px;
 }
 
-
-footer .middel-footer a {
+footer .middle-footer a {
     color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-footer .middel-footer a:hover {
-    font-size: 20px;
-}
-
-footer .bottom-footer p {
-    color: #fff;
-    margin-top: 22px;
+    margin: 0 20px;
 }
 
 footer .bottom-footer {
     border-top: 2px solid #fff;
 }
 
-.zoom{
-    width: 300px;
-    transition: 0.4s;   
-    cursor: pointer;
+footer .bottom-footer p {
+    color: #fff;
+    margin-top: 10px;
 }
 
-.zoom:hover{
-    transform: scale(1.2);
+
+html {
+    scroll-behavior: smooth;
 }
 
-.logo img{
-    transition: .4s;
+section.mapa {
+    padding: 20px 0;
+    background-color: #0c0c0c;
+    color: #fff;
 }
 
-.logo img:hover{
-    transform: scale(1.2);
+.mapa iframe{
+     border-radius: 20px;
 }
-/* fim do codigo-----------------------$$$$$$$$ */
+
+.mapa h3{
+    text-align: center;
+    font-weight: 400;
+}
