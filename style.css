@@ -229,7 +229,7 @@ section.hero-site {
 
 .hero-site button {
     margin-left: 25px;
-    width: 300px;
+    width: 200px;
     height: 60px;
     font-size: 20px;
     border-radius: 12px;
@@ -268,8 +268,8 @@ section.na-tapuio {
 }
 
 .zoom-container img {
-    width: 450;
-    height: 100%;
+    width: 450px;
+    height: auto;
     transition: transform 0.5s ease;
     display: block;
 }
