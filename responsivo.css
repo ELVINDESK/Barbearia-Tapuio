@@ -9,12 +9,6 @@
         display: block;
     }
 
-      .hero-site .txt-hero h1 {
-        font-size: 4em;
-        line-height: 50px;
-        font-weight: 300;
-    }
-
     section.na-tapuio {
         text-align: center;
         padding: 80px 0;
@@ -22,14 +16,14 @@
     }
 
     body {
-    background-color: rgb(90, 90, 90);
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    height: auto;
-    scroll-behavior: auto;
-}
+        background-color: rgb(90, 90, 90);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        height: auto;
+        scroll-behavior: auto;
+    }
 
 
     .na-tapuio .itens-container {
@@ -40,7 +34,8 @@
         text-align: center;
     }
 
-    img, iframe{
+    img,
+    iframe {
         max-width: 100%;
         display: block;
     }
@@ -130,42 +125,47 @@
         margin-top: 10px;
     }
 
-    .hero-site .txt-hero h1{
-    padding: 20px;
-    font-size: 12px;
-    line-height: 70px;
-    font-weight: 500;
+
+    .interface {
+        max-width: 100%;
+        padding: 0 5%;
+    }
+
+    .zoom-container img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .zoom-container img,
+    .na-tapuio .itens-container .img-itens img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .hero-site .txt-hero h1 {
+        font-size: 2em;
+        /* tamanho ideal para celular */
+        line-height: 1.2em;
+        /* espaçamento proporcional */
+        font-weight: 500;
+        text-align: center;
+        /* centraliza o título */
+        padding: 10px 0;
+    }
+
+    .hero-site .txt-hero h1 span {
+        display: block;
+        font-weight: 600;
+    }
+
+
 }
 
-.hero-site .txt-hero h1 span{
-    display: block;
-    font-weight: 500;
-}
-
-.interface{
-    max-width: 100%;
-    padding: 0 5%;
-}
-
-.zoom-container img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-}
-
-html, body {
-  overflow-x: hidden;
-}
-
-.zoom-container img,
-.na-tapuio .itens-container .img-itens img {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-}
-
-}
-
-@media screen and (max-width: 878px) {
-
-}
+@media screen and (max-width: 878px) {}
