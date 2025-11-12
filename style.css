@@ -47,13 +47,14 @@ header .logo img {
 }
 
 header.rolar {
-    background-color: #000000;
-    padding: 20px 0;
+        background: linear-gradient(100deg, #000000, rgb(25, 26, 27));
+    padding: 40px 0;
 }
 
 header.rolar .menu-desktop nav ul li a {
     color: #ffffff;
     padding: 10px 0;
+    font-size: 20px;
 }
 
 header.rolar .btn-contato button {
@@ -209,15 +210,16 @@ section.hero-site {
 
 .hero-site .txt-hero h1 {
     padding: 20px;
-    font-size: 4em;
+    font-size: 7em;
     line-height: 70px;
     font-weight: 500;
-    margin-top: 12px;
+    margin-top: 200px;
 }
 
 .hero-site .txt-hero h1 span {
     display: block;
     font-weight: 500;
+    margin-top: 50px;
 }
 
 .hero-site .txt-hero p {
@@ -231,16 +233,16 @@ section.hero-site {
 
 .hero-site button {
     margin-left: 25px;
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
+    width: 250px;
+    height: 70px;
+    font-size: 18px;
     border-radius: 12px;
     margin-top: 100px;
 }
 
 section.na-tapuio {
     padding: 80px 0;
-    background: linear-gradient(100deg, #d3d3d3, rgba(119, 180, 255, 0.582));
+    background: linear-gradient(100deg, #494949, rgba(2, 31, 65, 0.582));
 }
 
 .na-tapuio .itens-container {
@@ -282,7 +284,7 @@ section.na-tapuio {
 }
 
 section.contato {
-    background: linear-gradient(100deg, #d3d3d3, rgba(119, 180, 255, 0.582));
+    background: linear-gradient(100deg, #494949, rgba(2, 31, 65, 0.582));
     padding: 80px 0;
 }
 
@@ -319,7 +321,7 @@ section.contato {
     justify-content: space-between;
     padding: 0 60px;
     background-color: transparent;
-    border: 2px solid #2f2b2b;
+    border: 2px solid #ffffff;
     cursor: pointer;
     transition: .5s;
     border-radius: 12px;
@@ -406,7 +408,7 @@ section.assinatura {
 
 section.sobre-tapuio {
     padding: 80px 0;
-    background: linear-gradient(100deg, #d3d3d3, rgba(119, 180, 255, 0.582));
+    background: linear-gradient(100deg, #494949, rgba(2, 31, 65, 0.582));
 }
 
 .txt-sobre,
@@ -440,20 +442,20 @@ section.sobre-tapuio {
     align-items: center;
     gap: 20px;
     margin-bottom: 40px;
-    border: 2px solid #000;
+    border: 2px solid #b9b9b9;
     padding: 20px;
     border-radius: 12px;
 }
 
 .sobre-texto .sobre-box:hover {
-    background-color: #ffffff6e;
+    background-color: #ffffff4c;
     cursor: pointer;
 }
 
 .sobre-texto .sobre-box img {
     max-width: 100px;
     border-radius: 10px;
-    box-shadow: 12px 10px 0 rgb(48, 48, 48);
+    box-shadow: 12px 10px 0 rgb(47, 47, 47);
 }
 
 .sobre-texto .sobre-box h4 {
