@@ -23,12 +23,13 @@ body {
 
 header {
     width: 100%;
-    padding: 40px 0;
+    padding: 80px 0;
     position: fixed;
     top: 0;
     left: 0;
     transition: .7s;
     z-index: 5;
+    font-size: 3px;
 }
 
 header .interface {
@@ -46,12 +47,13 @@ header .logo img {
 }
 
 header.rolar {
-    background-color: #000000da;
+    background-color: #000000;
     padding: 20px 0;
 }
 
 header.rolar .menu-desktop nav ul li a {
     color: #ffffff;
+    padding: 10px 0;
 }
 
 header.rolar .btn-contato button {
@@ -78,9 +80,7 @@ header .menu-desktop nav ul li a {
     text-decoration: none;
     display: inline-block;
     transition: 0.1s;
-    font-size: 19px;
-    padding: 0;
-
+    font-size:20px;
 }
 
 header .menu-desktop nav ul li a:hover {
@@ -208,7 +208,7 @@ section.hero-site {
 
 .hero-site .txt-hero h1 {
     padding: 20px;
-    font-size: 4em;
+    font-size: 6em;
     line-height: 70px;
     font-weight: 500;
 }
@@ -229,10 +229,11 @@ section.hero-site {
 
 .hero-site button {
     margin-left: 25px;
-    width: 220px;
+    width: 300px;
     height: 60px;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 12px;
+    margin-top: 100px;
 }
 
 section.na-tapuio {
@@ -262,7 +263,8 @@ section.na-tapuio {
 
 .txt-itens p {
     padding: 20px;
-    font-weight: 500px;
+    font-weight: 700px;
+    font-size: 20px;
 }
 
 .zoom-container img {
@@ -390,7 +392,7 @@ section.assinatura {
     color: #fff;
     cursor: pointer;
     transition: .5s;
-    width: 200px;
+    width: 300px;
     height: 58px;
     border-radius: 12px;
 }
@@ -421,7 +423,7 @@ section.sobre-tapuio {
 .sobre-tapuio .txt-sobre h3 {
     font-size: 4em;
     line-height: 60px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 
@@ -477,7 +479,7 @@ section.agendar {
     color: #fff;
     cursor: pointer;
     transition: .5s;
-    width: 200px;
+    width: 300px;
     height: 58px;
     border-radius: 12px;
 }
