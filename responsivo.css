@@ -12,8 +12,17 @@
     section.na-tapuio {
         text-align: center;
         padding: 80px 0;
-        background: linear-gradient(100deg, #d3d3d3, rgba(119, 180, 255, 0.582));
+         background: linear-gradient(100deg, #a3a3a3, rgb(0, 55, 122));
     }
+
+.hero-site button {
+   margin: -1px;
+   margin-top: 12px;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 12px;
+}
 
     body {
         background-color: rgb(90, 90, 90);
@@ -27,11 +36,11 @@
 
     section.sobre-tapuio {
     padding: 80px 0;
-    background: linear-gradient(100deg, #6a6a6a, rgb(0, 16, 37));
+    background: linear-gradient(100deg, #a3a3a3, rgb(0, 55, 122));
 }
 
 section.contato {
-    background: linear-gradient(100deg, #6a6a6a, rgb(0, 16, 37));
+   background: linear-gradient(100deg, #a3a3a3, rgb(0, 55, 122));
     padding: 80px 0;
 }
 
@@ -89,6 +98,17 @@ section.contato {
         line-height: 40px;
         font-weight: 200;
     }
+
+section.hero-site {
+    height: 100;
+    background-image: url(img/20250818_181749\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    color: #fff;
+}
 
     section.assinatura {
         height: 500px;
@@ -177,7 +197,7 @@ section.contato {
     }
 
     header.rolar {
-        background: linear-gradient(100deg, #000000, rgb(55, 55, 55));
+       background: linear-gradient(100deg, #151515, rgb(0, 15, 33));
     padding: 12px 0;
 }
 
