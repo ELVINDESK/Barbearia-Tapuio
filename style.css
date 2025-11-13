@@ -258,10 +258,12 @@ header .btn-contato button:hover,
 }
 
 section.hero-site {
-    height: 100vh;
+    height: 700px;
     background-image: url(img/20250818_181749\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    position: relative;
     background-position: center;
     color: #fff;
 }
