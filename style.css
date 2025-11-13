@@ -308,7 +308,7 @@ section.hero-site {
 
 section.na-tapuio {
     padding: 80px 0;
-    background: linear-gradient(100deg, #d3d3d3, rgba(14, 54, 103, 0.582));
+     background: linear-gradient(100deg, #6b6b6b, rgba(0, 25, 99, 0.789));
 }
 
 .na-tapuio .itens-container {
@@ -350,7 +350,7 @@ section.na-tapuio {
 }
 
 section.contato {
-    background: linear-gradient(100deg, #d3d3d3, rgba(14, 54, 103, 0.582));
+   background: linear-gradient(100deg, #6b6b6b, rgba(0, 25, 99, 0.789));
     padding: 80px 0;
 }
 
@@ -519,7 +519,7 @@ section.assinatura {
 
 section.sobre-tapuio {
     padding: 80px 0;
-   background: linear-gradient(100deg, #d3d3d3, rgba(14, 54, 103, 0.582));
+   background: linear-gradient(100deg, #6b6b6b, rgba(0, 25, 99, 0.789));
 }
 
 .txt-sobre,
@@ -617,7 +617,7 @@ section.agendar {
 }
 
 footer {
-    background-color: #0c0c0c;
+    background: linear-gradient(100deg, #000000, rgb(0, 0, 0));
     width: 100%;
     text-align: center;
     color: #fff;
@@ -667,7 +667,7 @@ html {
 
 section.mapa {
     padding: 20px 0;
-    background-color: #0c0c0c;
+    background-color: #000000 ;
     color: #fff;
 }
 
