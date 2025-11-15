@@ -11,4 +11,15 @@ btnMenuMob.addEventListener('click', ()=>{
     line2.classList.toggle('ativo2')
     menuMobile.classList.toggle('abrir')
     body.classList.toggle('no-overflow')
+
+
+
+
+
+
+
+    
 })
+
+
+
