@@ -7,7 +7,7 @@
 
 body {
     height: 100%;
-    background-color: #000000;
+    background-color: #00000000;
     background-attachment: fixed;
     color: #fff;
     margin: 0;
@@ -561,7 +561,7 @@ footer {
 }
 
 footer .top-footer button {
-    width: 5%;
+    width: 60px;
     height: 60px;
     border-radius: 50%;
     border: 2px solid#fff;
