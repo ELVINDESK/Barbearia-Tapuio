@@ -6,7 +6,8 @@
 }
 
 body {
-    height: 900vh;
+    height: 100%;
+    background-color: #000000;
     background-attachment: fixed;
     color: #fff;
     margin: 0;
@@ -33,18 +34,17 @@ header {
     transition: .7s;
     z-index: 5;
     font-size: 3px;
-   
 }
 
 header .interface {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color:#a7a7a7;
+    color: #a7a7a7;
 }
 
 header .logo img {
-    width: 70px;
+    width: 100%;
     height: 70px;
     border-radius: 12px;
     box-shadow: 9px 4px 0 rgb(99, 99, 99);
@@ -52,7 +52,7 @@ header .logo img {
 }
 
 header.rolar {
-     background: linear-gradient(135deg, #000000, #000000, #000f6d);
+    background: linear-gradient(135deg, #000000, #000000, #000f6d);
     padding: 10px 0;
 }
 
@@ -68,7 +68,7 @@ header.rolar .btn-contato button {
 }
 
 header.rolar .btn-contato button:hover {
-    background-color: #727272;
+    background-color: #929292a2;
 }
 
 header .menu-desktop nav ul {
@@ -118,7 +118,7 @@ header .menu-desktop nav ul li a:hover::after {
 }
 
 header .btn-contato button {
-    width: 140px;
+    width: 200%;
     height: 50px;
     border-radius: 12px;
 }
@@ -229,9 +229,8 @@ header .btn-contato button::before,
 /* Efeito do hover no botão */
 header .btn-contato button:hover,
 .hero-site button:hover {
-    background-color: #6c6c6c;
+    background-color: #929292a2;
     color: #000000;
-    box-shadow: -5px -5px 23px #0d1383, 5px 5px 23px #050836;
 }
 
 section.hero-site {
@@ -264,7 +263,7 @@ section.hero-site {
 .hero-site .txt-hero h1 span {
     display: block;
     font-weight: 900;
-      color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
 }
 
 @keyframes slideInFromLeft {
@@ -290,7 +289,7 @@ section.hero-site {
 
 .hero-site button {
     margin-left: 25px;
-    width: 200px;
+    width: 80%;
     height: 60px;
     font-size: 20px;
     border-radius: 12px;
@@ -378,7 +377,7 @@ section.contato {
     justify-content: space-between;
     padding: 0 60px;
     background-color: #000;
-     border: 2px solid #000f80;
+    border: 2px solid #000f80;
     cursor: pointer;
     transition: .5s;
     border-radius: 12px;
@@ -390,11 +389,10 @@ section.contato {
 }
 
 .contato .icons-contato button:hover {
-    background-color: rgb(114, 114, 114);
-    box-shadow: -5px -5px 23px #0d1383, 5px 5px 23px #050836;
+    background-color: #727272a2;
 }
 
-.contato .icons-contato  p {
+.contato .icons-contato p {
     color: #fff;
 }
 
@@ -404,82 +402,87 @@ section.contato {
 }
 
 section.assinatura {
-    height: 700px;
-    background-image: url(img/IMG_8006.JPG);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    color: #fff;
-    font-weight: 700;
+    background: linear-gradient(135deg, #4d4d4d, #000000, #787878);
+    justify-content: space-between;
+    text-align: center;
+    padding: 60px 0;
+    border-radius: 15px;
+    box-shadow: 10px 12px 0 rgb(231, 231, 231);
 }
 
-.assinatura>.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.641);
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-.assinatura>.interface {
+/* Seção Planos — Ajuste */
+.assinatura .planos {
     display: flex;
+    flex-direction: column;
+    /* Alinha um em cima do outro */
     align-items: center;
     justify-content: center;
-    height: 100%;
-    flex-direction: column;
-    z-index: 2;
-    position: relative;
-}
-
-.assinatura h3 {
-    font-size: 3em;
-    line-height: 50px;
-    font-weight: 800;
-}
-
-.assinatura h3 span {
-    line-height: 50px;
-    font-weight: 700;
-}
-
-.assinatura p {
-    margin: 20px 0;
-    font-size: 20px;
+    gap: 30px;
     text-align: center;
-    font-weight: 500;
 }
 
-.assinatura button {
-    position: relative;
-    font-size: 18px;
+/* Imagem dos planos */
+.img-planos {
+    background: linear-gradient(135deg, #4d4d4d, #000000, #787878);
+    ;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    border: 2px solid #000000;
+    padding: 20px;
+    border-radius: 12px;
+    transition: .7s;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+
+.assinatura .btn-planos button{
     background-color: #000;
-    border: 2px solid #000d83;
+  position: relative;
+    font-size: 20px;
+    background-color: #000;
+    border: 2px solid #000000;
     color: #fff;
     cursor: pointer;
     transition: .5s;
     border-radius: 12px;
-    padding: 12px 35px;
+    padding: 17px;
     overflow: hidden;
-    z-index: 1;
 }
 
-.assinatura button::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 12px;
-    padding: 2px;
+.assinatura .btn-planos button:hover{
+    background-color: #2e2e2e;
+    color: #ffffff;
 }
 
-.assinatura button:hover {
-    background-color: #737373;
-    color: #000000;
-    box-shadow: -5px -5px 23px #0d1383, 5px 5px 23px #050836;
+.texto-colorido {
+    font-size: 50px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #686868, #f7f7f7, #808080, #656565, #080808, #00011d, #f9f9f9, #000000);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: animarCores 6s linear infinite;
 }
+
+@keyframes animarCores {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
 
 
 section.sobre-tapuio {
@@ -549,39 +552,6 @@ section.sobre-tapuio {
     text-align: center;
 }
 
-section.agendar {
-    height: 70px;
-    background-color: #000000;
-    padding: 80px 0;
-}
-
-.agendar button {
-    background-color: transparent;
-    font-size: 18px;
-    border: 2px solid #000000;
-    color: #fff;
-    cursor: pointer;
-    transition: .5s;
-    width: 300px;
-    height: 58px;
-    border-radius: 12px;
-}
-
-.agendar>.interface {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    flex-direction: column;
-    z-index: 2;
-    position: relative;
-}
-
-.agendar button:hover {
-    background-color: #717171;
-    color: black;
-}
-
 footer {
     background: linear-gradient(100deg, #000000, rgb(0, 0, 0));
     width: 100%;
@@ -591,7 +561,7 @@ footer {
 }
 
 footer .top-footer button {
-    width: 60px;
+    width: 5%;
     height: 60px;
     border-radius: 50%;
     border: 2px solid#fff;
@@ -643,5 +613,5 @@ section.mapa {
 
 .mapa h3 {
     text-align: center;
-    font-weight: 400;
+    font-weight: 700;
 }
