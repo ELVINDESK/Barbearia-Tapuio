@@ -561,21 +561,18 @@ footer {
 }
 
 footer .top-footer button {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    border: 2px solid#fff;
-    background-color: transparent;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-    margin: 0 10px;
+    border: 2px solid #fff;
+    font-size: 28px;
     transition: .5s;
+    cursor: pointer;
 }
 
 footer .top-footer button:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 footer .middle-footer {
