@@ -58,7 +58,7 @@ header.rolar {
 
 header.rolar .menu-desktop nav ul li a {
     color: #ffffff;
-    padding: 10px 0;
+    padding: 30px 0;
 }
 
 header.rolar .btn-contato button {
@@ -176,7 +176,7 @@ header .menu-mobile nav a {
     font-size: 24px;
     text-decoration: none;
     color: #fff;
-    padding: 20px 0;
+    padding: 30px 0;
     display: block;
     transition: .5s;
     border-radius: 20px;
