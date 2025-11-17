@@ -406,7 +406,7 @@ section.assinatura {
     justify-content: space-between;
     text-align: center;
     padding: 60px 0;
-    border-radius: 15px;
+
     box-shadow: 10px 12px 0 rgb(231, 231, 231);
 }
 
@@ -419,7 +419,9 @@ section.assinatura {
     justify-content: center;
     gap: 30px;
     text-align: center;
+
 }
+
 
 /* Imagem dos planos */
 .img-planos {
@@ -561,6 +563,7 @@ footer {
 }
 
 footer .top-footer button {
+    background-color: #eeeeeeec;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -572,7 +575,7 @@ footer .top-footer button {
 
 footer .top-footer button:hover {
     background-color: #000000;
-    color: #ffffff;
+    color: #000062;
 }
 
 footer .middle-footer {
@@ -580,7 +583,7 @@ footer .middle-footer {
 }
 
 footer .middle-footer a {
-    color: #fff;
+    color: #070087;
     margin: 0 20px;
 }
 
@@ -611,4 +614,30 @@ section.mapa {
 .mapa h3 {
     text-align: center;
     font-weight: 700;
+}
+
+section.agendar{
+     background: linear-gradient(135deg, #0a0f3c, #000000, #000c67);
+    justify-content: space-between;
+    text-align: center;
+    padding: 60px 0;
+    box-shadow: 10px 12px 0 rgb(231, 231, 231);
+}
+
+.agendar-cte button{
+    background-color: #000;
+  position: relative;
+    font-size: 20px;
+    background-color: #000;
+    border: 2px solid #00065b;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.agendar-cte button:hover{
+   background-color: #727272a2;
+    color: #ffffff;
 }
