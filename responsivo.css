@@ -30,9 +30,53 @@
                 .img-planos {
                     max-width: 100%;
                 }
+ 
             }
 
 
+
+            footer {
+    background: linear-gradient(100deg, #000000, rgb(0, 0, 0));
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+footer .top-footer button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid#fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+footer .top-footer button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+footer .middle-footer {
+    margin: 10px;
+}
+
+footer .middle-footer a {
+    color: #fff;
+    margin: 0 20px;
+}
+
+footer .bottom-footer {
+    border-top: 2px solid #fff;
+}
+
+footer .bottom-footer p {
+    color: #fff;
+    margin-top: 10px;
+}
 
 
             .hero-site button {
