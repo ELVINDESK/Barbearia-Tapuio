@@ -26,7 +26,7 @@ body {
 
 header {
     width: 100%;
-    padding: 20px 0;
+    padding: 50px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -57,7 +57,7 @@ header.rolar {
 
 header.rolar .menu-desktop nav ul li a {
     color: #ffffff;
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 header.rolar .btn-contato button {
@@ -561,16 +561,17 @@ footer {
     padding: 12px;
 }
 
-footer .top-footer button {
+footer .top-footer button{
     background-color: #eeeeeeec;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     border: 2px solid #fff;
-    font-size: 28px;
+    font-size: 20px;
     transition: .5s;
     cursor: pointer;
 }
+
 
 footer .top-footer button:hover {
     background-color: #000000;
@@ -579,7 +580,7 @@ footer .top-footer button:hover {
 
 footer .middle-footer {
     margin: 10px;
-}
+}   
 
 footer .middle-footer a {
     color: #070087;
