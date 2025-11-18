@@ -30,7 +30,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    transition: .7s;
+    transition: .5s;
     z-index: 5;
     font-size: 3px;
 }
@@ -95,8 +95,8 @@ header .menu-desktop nav ul li a::after {
     bottom: -5px;
     left: 0;
     width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #0b1767, #e5e5e5, #000000);
+    height: 5px;
+    background: linear-gradient(90deg, #0b1767, #ffffff, #000000);
     background-size: 200%;
     transition: width 0.4s ease;
 }
@@ -562,11 +562,11 @@ footer {
 }
 
 footer .top-footer button{
-    background-color: #eeeeeeec;
+    background-color: #ffffff42;
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 2px solid #fff;
+
     font-size: 20px;
     transition: .5s;
     cursor: pointer;
@@ -574,8 +574,8 @@ footer .top-footer button{
 
 
 footer .top-footer button:hover {
-    background-color: #000000;
-    color: #000062;
+    background-color: #ffffffb4;
+    color: #0037db;
 }
 
 footer .middle-footer {
@@ -583,7 +583,7 @@ footer .middle-footer {
 }   
 
 footer .middle-footer a {
-    color: #070087;
+    color: #ffffff;
     margin: 0 20px;
 }
 
