@@ -26,48 +26,70 @@ body {
 
 header {
     width: 100%;
-    padding: 50px 0;
+    padding: 20px 0;
     position: fixed;
     top: 0;
     left: 0;
     transition: .5s;
     z-index: 5;
     font-size: 3px;
+    margin: 20px 0;
+
+    border-radius: 100px;
+     background: rgba(14, 14, 14, 0.432);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 header .interface {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #a7a7a7;
+    color: #ffffff;
 }
 
 header .logo img {
     width: 100%;
     height: 70px;
     border-radius: 12px;
-    box-shadow: 9px 4px 0 rgb(99, 99, 99);
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
     cursor: pointer;
 }
 
+header .logo img:hover {
+    transform: scale(1.05);
+    transition: .5s;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+
 header.rolar {
-    background: linear-gradient(135deg, #000000, #000000, #000f6d);
+    background: linear-gradient(135deg, #3b3b3b50, #494949, #35353569);
     padding: 10px 0;
 }
 
 header.rolar .menu-desktop nav ul li a {
     color: #ffffff;
-    padding: 40px 0;
+    padding: 23px 0;
+}
+
+header.rolar .menu-desktop nav ul li a:hover {
+    background-color: #ffffff65;
+    color: #000;
+    padding: 20px;
+    border-radius: 100px;
 }
 
 header.rolar .btn-contato button {
-    border: 1px solid #070063;
+    border: 1px solid #ffffff;
     color: #ffffff;
-    border-radius: 12px;
+    border-radius: 100px;
+    transition: transform 0.3s ease;
 }
 
 header.rolar .btn-contato button:hover {
-    background-color: #929292a2;
+    background-color: #858585;
+    color: #000000;
+    transform: scale(1.05);
 }
 
 header .menu-desktop nav ul {
@@ -86,6 +108,7 @@ header .menu-desktop nav ul li a {
     display: inline-block;
     font-size: 20px;
     transition: all 0.3s ease;
+    font-weight: bold;
 
 }
 
@@ -96,24 +119,13 @@ header .menu-desktop nav ul li a::after {
     left: 0;
     width: 0;
     height: 5px;
-    background: linear-gradient(90deg, #0b1767, #ffffff, #000000);
-    background-size: 200%;
-    transition: width 0.4s ease;
 }
 
-header .menu-desktop nav ul li a:hover::after {
-    width: 100%;
-    animation: brilho 1s linear infinite;
-}
-
-@keyframes brilho {
-    0% {
-        background-position: 0%;
-    }
-
-    100% {
-        background-position: 200%;
-    }
+header .menu-desktop nav ul li a:hover {
+    color: #000;
+    padding: 20px;
+    background-color: #ffffff65;
+    border-radius: 100px;
 }
 
 header .btn-contato button {
@@ -155,7 +167,7 @@ header .btn-menu-mob .line-menu-mob-2.ativo2 {
 header .menu-mobile {
     width: 0;
     height: 0;
-    background-color: rgba(0, 0, 0, 0.786);
+    background: linear-gradient(900deg, rgb(97, 97, 97), rgb(5, 5, 29));
     position: absolute;
     top: 0;
     right: 0;
@@ -165,6 +177,7 @@ header .menu-mobile {
     text-align: center;
     overflow: hidden;
     transition: .5s;
+    border-radius: 50px;
 }
 
 header .menu-mobile nav ul {
@@ -205,14 +218,16 @@ header .btn-contato button,
     position: relative;
     font-size: 18px;
     background-color: #000;
-    border: 2px solid #000f80;
+    font-weight: bold;
+    border: 2px solid #ffffff;
     color: #fff;
     cursor: pointer;
     transition: .5s;
-    border-radius: 12px;
+    border-radius: 100px;
     padding: 1px;
     overflow: hidden;
     z-index: 1;
+    transition: transform 0.3s ease;
 }
 
 header .btn-contato button::before,
@@ -228,12 +243,13 @@ header .btn-contato button::before,
 /* Efeito do hover no botão */
 header .btn-contato button:hover,
 .hero-site button:hover {
-    background-color: #929292a2;
+    background: linear-gradient(135deg, #ffffff, #7a7a7a, #555555);
     color: #000000;
+    transform: scale(1.05);
 }
 
 section.hero-site {
-    height: 700px;
+    height: 100vh;
     background-image: url(img/20250818_181749\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -249,20 +265,56 @@ section.hero-site {
     height: 100%;
 }
 
+.hero-site{
+    display: flex; /* Coloca um embaixo do outro */
+    align-items: center;    /* Centraliza os filhos horizontalmente */
+    justify-content: center;/* Centraliza verticalmente (se a seção tiver altura) */
+    text-align: center;     /* Garante que as linhas de texto fiquem no meio */
+    width: 100%;            /* Ocupa a largura total da tela */
+    padding: 0 20px;        /* Evita que o texto encoste nas bordas no celular */
+}
+
+/* 2. O Título */
+.hero h1 {
+    width: 100%;            /* Ocupa todo o espaço para o texto centralizar */
+    margin-left: 0;         /* REMOVA margens fixas se houver */
+    margin-right: 0;
+    margin-bottom: 30px;    /* Espaço entre o título e o botão */
+}
+
+.hero a {
+    display: flex;          /* Faz o link também se comportar como flex */
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;            /* Garante que o link ocupe a largura para centralizar o botão */
+}
+
+.hero button {
+    margin: 0 auto;         /* O "auto" nas laterais força a centralização */
+    width: auto;            /* O botão terá o tamanho apenas do texto */
+    min-width: 200px;       /* Mas com um tamanho mínimo para ficar bonito */
+    cursor: pointer;
+}
+
 .hero-site .txt-hero h1 {
     padding: 20px;
     font-size: 4em;
     line-height: 70px;
-    font-weight: 900;
+    font-weight: bold;
     margin-top: 200px;
     color: #ffffff;
     animation: slideInFromLeft 1s ease-out forwards;
 }
 
 .hero-site .txt-hero h1 span {
-    display: block;
-    font-weight: 900;
+    font-weight: 500;
     color: hsl(0, 0%, 100%);
+}
+
+.hero-site button:hover {
+    background: linear-gradient(135deg, #ffffff, #7a7a7a, #555555);
+    color: #000000;
+    box-shadow: 12px 12px 16px #000000;
 }
 
 @keyframes slideInFromLeft {
@@ -280,6 +332,9 @@ section.hero-site {
 .hero-site .txt-hero p {
     font-size: 20px;
     font-weight: 400;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .hero-site .txt-hero p span {
