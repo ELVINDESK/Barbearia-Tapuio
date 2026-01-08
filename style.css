@@ -63,7 +63,7 @@ header .logo img:hover {
 }
 
 header.rolar {
-    background: linear-gradient(135deg, #3b3b3b50, #494949, #35353569);
+    background: linear-gradient(135deg, #3b3b3b50, #413d3d52, #35353569);
     padding: 10px 0;
 }
 
@@ -141,7 +141,7 @@ header .btn-menu-mob {
 }
 
 header .btn-menu-mob div {
-    background-color: #fff;
+    background-color: #969696;
     height: 3px;
     margin: 10px 0;
     transition: .2s;
@@ -167,7 +167,7 @@ header .btn-menu-mob .line-menu-mob-2.ativo2 {
 header .menu-mobile {
     width: 0;
     height: 0;
-    background: linear-gradient(900deg, rgb(97, 97, 97), rgb(5, 5, 29));
+    background: linear-gradient(900deg, rgba(97, 97, 97, 0.445), rgb(0, 0, 75));
     position: absolute;
     top: 0;
     right: 0;
@@ -188,14 +188,15 @@ header .menu-mobile nav a {
     font-size: 24px;
     text-decoration: none;
     color: #fff;
-    padding: 30px 0;
+    padding: 20px 0;
     display: block;
     transition: .5s;
     border-radius: 20px;
+    bottom: 10px;
 }
 
 header .menu-mobile nav a:hover {
-    background-color: #fffafac3;
+    background-color: #8f8f8fc3;
     color: #000000;
     box-shadow: 0 0 20px #000000;
 }
@@ -243,7 +244,7 @@ header .btn-contato button::before,
 /* Efeito do hover no botão */
 header .btn-contato button:hover,
 .hero-site button:hover {
-    background: linear-gradient(135deg, #ffffff, #7a7a7a, #555555);
+    background: linear-gradient(to right, #003372, #00447c, #003f86);
     color: #000000;
     transform: scale(1.05);
 }
@@ -312,9 +313,9 @@ section.hero-site {
 }
 
 .hero-site button:hover {
-    background: linear-gradient(135deg, #ffffff, #7a7a7a, #555555);
+    background: linear-gradient(to right, #0073ff, #008cff, #00aeff);
     color: #000000;
-    box-shadow: 12px 12px 16px #000000;
+    box-shadow: 0px 0px 16px #0059ff;
 }
 
 @keyframes slideInFromLeft {
@@ -351,7 +352,7 @@ section.hero-site {
 
 section.na-tapuio {
     padding: 80px 0;
-    background: linear-gradient(135deg, #0a0f3c, #000000, #000c67);
+    background: linear-gradient(to bottom, #001d3d, #000000);
 }
 
 .na-tapuio .itens-container {
@@ -364,20 +365,33 @@ section.na-tapuio {
 
 .na-tapuio .itens-container .img-itens img {
     max-width: 420px;
-    border-radius: 15px;
-    box-shadow: 10px 12px 0 rgb(231, 231, 231);
+    border-radius: 12px;
+    box-shadow: 0px 12px 30px rgb(0, 60, 151);
+    transition: .5s;    
+}
+
+.na-tapuio .itens-container .img-itens img:hover {
+    transform: scale(1.05);
+    transition: .5s;
+    box-shadow: 0px 12px 80px rgb(0, 102, 255);
 }
 
 .na-tapuio .itens-container .txt-itens h3 {
     font-size: 3em;
     line-height: 50px;
     margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .txt-itens p {
     padding: 20px;
     font-weight: 700px;
     font-size: 20px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    background-color: #000000b3;
 }
 
 .zoom-container img {
