@@ -367,7 +367,8 @@ section.na-tapuio {
     max-width: 420px;
     border-radius: 12px;
     box-shadow: 0px 12px 30px rgb(0, 60, 151);
-    transition: .5s;    
+    transition: .5s; 
+    border: 1px solid #ffffff;   
 }
 
 .na-tapuio .itens-container .img-itens img:hover {
