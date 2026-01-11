@@ -618,7 +618,7 @@ section.sobre {
     align-items: center;
     justify-content: space-between;
     gap: 80px;
-    flex-wrap: wrap;
+    flex-wrap: wr;
 }
 
 .sobre .flex .txt-sobre h2 {
@@ -651,7 +651,7 @@ section.sobre {
 .experiencia-badge {
     position: absolute;
     top: -20px;
-    left: 100px;
+    left: -32px;
     background-color: #000000; /* Um tom levemente mais claro que o preto puro */
     padding: 20px;
     border-radius: 15px;
