@@ -77,7 +77,7 @@ header .logo img {
 header .logo img:hover {
     transform: scale(1.05);
     transition: .5s;
-    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    box-shadow: 0px 0px 3px rgb(83, 83, 83);
 }
 
 
@@ -127,7 +127,7 @@ header .menu-desktop nav ul li a:hover {
 
 
 header .btn-contato button {
-    background-color: #0037db;
+    background: linear-gradient(to right, #003372, #00447c, #003f86);
     color: #fff;
     padding: 10px 25px;
     border-radius: 30px;
@@ -229,7 +229,7 @@ header .btn-contato button,
 .hero-site button {
     position: relative;
     font-size: 18px;
-    background-color: #575757;
+    background: linear-gradient(to right, #003372, #00447c, #003f86);
     font-weight: bold;
     color: #fff;
     cursor: pointer;
@@ -261,7 +261,7 @@ header .btn-contato button,
 
 /* Efeito ao passar o mouse (Hover) */
 .hero-site .txt-hero button:hover {
-    background-color: #0047ab;
+    background: linear-gradient(to right, #0056be, #0069be, #005dc7);
     color: #fff;
     transform: scale(1.05) translateY(-3px); /* Sobe levemente */
     box-shadow: 0 0px 30px rgba(0, 15, 130, 0.5); /* Brilho aumenta */
@@ -285,7 +285,7 @@ header .btn-contato button::before,
 /* Efeito do hover no botão */
 header .btn-contato button:hover,
 .hero-site button:hover {
-    background: linear-gradient(to right, #003372, #00447c, #003f86);
+    background: linear-gradient(to right, #0056be, #0069be, #005dc7);
     color: #000000;
     transform: scale(1.05);
 }
@@ -530,10 +530,10 @@ section.contato {
     justify-content: space-between;
     padding: 0 60px;
     background-color: #000;
-    border: 2px solid #ffffff;
+    border: 2px solid #ffffff2a;
     cursor: pointer;
     transition: .5s;
-    border-radius: 12px;
+    border-radius: 50px;
 }
 
 .contato .icons-contato button i {
@@ -542,20 +542,20 @@ section.contato {
 }
 
 .ic-wa button:hover {
-    background-color: #25d366;
+    background-color: #447a58;
     border: 2px solid #25d366;
-    border: 2px solid #000000;
+    border: 2px solid #15ff00;
 }
 
 .ic-in button:hover {
     background-color: #e1306c;
     border: 2px solid #e1306c;
-    border: 2px solid #000000;
+    border: 2px solid #ff00bf;
 }
 
 .ic-tik button:hover {
     background-color: #222222;
-    border: 2px solid #000000;
+    border: 2px solid #7c7c7c;
 }
 
 .contato .icons-contato p {
@@ -592,7 +592,8 @@ section.contato {
 }
 
 section.sobre {
-    background-color: #666666; /* Um tom levemente mais claro que o preto puro */
+    background-color: #2b2b2b;
+    padding: 20px; /* Um tom levemente mais claro que o preto puro */
     color: #fff;
 }
 
@@ -604,6 +605,10 @@ section.sobre {
     padding: 100px 0;
     border-radius: 40px;
     margin: 60px 0;
+}
+
+.sobre .flex .txt-sobre h2 {
+    color: #ffffff;
 }
 
 /* Container de Imagens */
@@ -638,6 +643,7 @@ section.sobre {
     border-radius: 15px;
     text-align: center;
     transform: rotate(-10deg);
+    box-shadow: 10px 10px 30px rgba(88, 88, 88, 0.486);
 }
 
 .experiencia-badge .anos {
@@ -686,6 +692,10 @@ section.sobre {
     gap: 40px;
 }
 
+.footer-box{
+    color: #ffff;
+}
+
 .footer-box {
     flex: 1;
     min-width: 250px;
@@ -711,7 +721,7 @@ section.sobre {
 }
 
 .footer-box p {
-    color: #a7a7a7;
+    color: #5a5a5a;
     line-height: 1.6;
     margin-bottom: 10px;
 }
@@ -746,7 +756,7 @@ section.sobre {
 .social-links a {
     width: 40px;
     height: 40px;
-    background-color: #1a1a1a;
+    background-color: #3a3a3a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -778,6 +788,11 @@ section.sobre {
     border-top: 1px solid #1a1a1a;
     color: #555;
     font-size: 0.9em;
+}
+
+footer .footer-copy a, p {
+    color: #363636;
+    text-decoration: none;
 }
 
 /* Responsivo para o footer */
@@ -838,6 +853,7 @@ section.agendar {
 }
 
 .agendar h2 {
+    color: #ffffff;
     font-size: 3em;
     line-height: 50px;
     font-weight: 700;
@@ -846,21 +862,21 @@ section.agendar {
 }
 
 .agendar-cte button {
-    background-color: #000;
+    background: linear-gradient(to right, #003372, #00447c, #003f86);
     position: relative;
     font-size: 20px;
-    background-color: #000;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff13;
     color: #fff;
     cursor: pointer;
-    transition: .5s;
+    transition: transform 0.3s ease;
     border-radius: 100px;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
     width: 400px;
 }
 
 .agendar-cte button:hover {
-    background: linear-gradient(to right, #003372, #00447c, #003f86);
+    background: linear-gradient(to right, #0056be, #0069be, #005dc7);
     color: #ffffff;
+    transform: scale(1.05);
 }

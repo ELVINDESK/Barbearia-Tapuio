@@ -427,6 +427,38 @@
             .bento-item {
                 height: 250px;
             }
+
+            .sobre .flex {
+                flex-direction: column-reverse;
+                /* Imagem embaixo do texto ou vice-versa */
+                text-align: center;
+                /* Centraliza o texto no mobile */
+            }
+
+            /* Ajuste das imagens sobrepostas para não sumirem da tela */
+            .img-sobre-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+            }
+
+            .img-principal {
+                width: 90%;
+                /* Ocupa quase a tela toda */
+            }
+
+            .img-detalhe {
+                width: 150px;
+                /* Diminui a foto menor no celular */
+                bottom: -20px;
+                right: 10px;
+            }
+
+            /* Diminuir o tamanho da fonte do título para não quebrar feio */
+            .txt-sobre h2 {
+                font-size: 2.2em;
+            }
         }
 
         @media screen and (max-width: 878px) {}
