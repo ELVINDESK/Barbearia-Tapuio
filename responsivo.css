@@ -243,7 +243,10 @@
                 background-color: #0f0f0f;
                 /* Um tom levemente mais claro que o preto puro */
                 color: #fff;
-                height: 78vh;
+                padding: 60px 0;
+                /* Ajusta o respiro no mobile */
+                height: auto !important;
+                /* Força a altura automática */
             }
 
             .sobre .flex {
@@ -255,6 +258,8 @@
                 padding: 10px 0;
                 border-radius: 0;
                 margin: 60px 0;
+                flex-direction: column;
+                /* Empilha o conteúdo */
             }
 
             /* Container de Imagens */

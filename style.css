@@ -595,6 +595,12 @@ section.sobre {
     background-color: #2b2b2b;
     padding: 20px; /* Um tom levemente mais claro que o preto puro */
     color: #fff;
+    width: 100%; /* IMPORTANTE: Deixe o conteúdo definir a altura */
+    height: auto;
+    padding: 100px 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
 }
 
 .sobre .flex {
@@ -605,6 +611,14 @@ section.sobre {
     padding: 100px 0;
     border-radius: 40px;
     margin: 60px 0;
+}
+
+.sobre .interface .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    flex-wrap: wrap;
 }
 
 .sobre .flex .txt-sobre h2 {
