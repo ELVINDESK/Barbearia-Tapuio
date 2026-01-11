@@ -3,7 +3,7 @@
             header .menu-desktop,
             header .btn-contato {
                 display: none;
-                
+
             }
 
             header .btn-menu-mob {
@@ -31,32 +31,32 @@
                 .img-planos {
                     max-width: 100%;
                 }
- 
+
             }
 
 
-footer .top-footer button:hover {
-    background-color: #fff;
-    color: #000;
-}
+            footer .top-footer button:hover {
+                background-color: #fff;
+                color: #000;
+            }
 
-footer .middle-footer {
-    margin: 10px;
-}
+            footer .middle-footer {
+                margin: 10px;
+            }
 
-footer .middle-footer a {
-    color: #fff;
-    margin: 0 20px;
-}
+            footer .middle-footer a {
+                color: #fff;
+                margin: 0 20px;
+            }
 
-footer .bottom-footer {
-    border-top: 2px solid #fff;
-}
+            footer .bottom-footer {
+                border-top: 2px solid #fff;
+            }
 
-footer .bottom-footer p {
-    color: #fff;
-    margin-top: 10px;
-}
+            footer .bottom-footer p {
+                color: #fff;
+                margin-top: 10px;
+            }
 
 
             .hero-site button {
@@ -256,8 +256,87 @@ footer .bottom-footer p {
                 overflow-x: hidden;
             }
 
+            @media screen and (max-width: 900px) {
+                header {
+                    background: rgba(70, 70, 70, 0);
+                    padding: 1px 20px;
+                    border: 1px solid rgba(77, 77, 77, 0.932);
+                    box-shadow: var(--shadow-soft);
+                }
+            }
 
+            section.agendar {
+                background: linear-gradient(135deg, #000000, #002350, #000000);
+                justify-content: space-between;
+                text-align: center;
+                padding: 60px 0;
+                box-shadow: 10px 12px 0 rgb(231, 231, 231);
+                height: 100%;
+            }
 
+            .agendar p {
+                font-size: 20px;
+                font-weight: 500;
+                color: #ffffff;
+                margin-top: 20px;
+            }
+
+            .agendar h2 {
+                color: #ffffff;
+                font-size: 2em;
+                line-height: 50px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            .agendar-cte button {
+                background-color: #000;
+                position: relative;
+                font-size: 20px;
+                background-color: #000;
+                border: 2px solid #ffffff;
+                color: #fff;
+                cursor: pointer;
+                transition: .5s;
+                border-radius: 100px;
+                padding: 20px;
+                margin-top: 20px;
+                width: 100%;
+            }
+
+            .agendar-cte button:hover {
+                background: linear-gradient(to right, #003372, #00447c, #003f86);
+                color: #ffffff;
+            }
+
+            .sobre-texto .sobre-box:hover {
+                background-color: #004c94fd;
+                cursor: pointer;
+            }
+
+            section.sobre-tapuio {
+                padding: 80px 0;
+
+                background: linear-gradient(100deg,
+                        #005272,
+                        #050036);
+                background-size: 400% 400%;
+                animation: gradientBG 10s ease infinite;
+            }
+
+            @keyframes gradientBG {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
         }
 
         @media screen and (max-width: 878px) {}

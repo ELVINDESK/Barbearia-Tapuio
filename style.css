@@ -5,6 +5,8 @@
     font-family: 'poppins', sans-serif;
 }
 
+
+
 body {
     height: 100%;
     background-attachment: fixed;
@@ -26,7 +28,7 @@ body {
 
 header {
     width: 100%;
-    padding: 20px 0;
+    padding: 30px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,7 +38,7 @@ header {
     margin: 20px 0;
 
     border-radius: 100px;
-     background: rgba(14, 14, 14, 0.432);
+    background: rgba(14, 14, 14, 0.205);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
@@ -63,7 +65,7 @@ header .logo img:hover {
 }
 
 header.rolar {
-    background: linear-gradient(135deg, #3b3b3b50, #413d3d52, #35353569);
+
     padding: 10px 0;
 }
 
@@ -141,7 +143,7 @@ header .btn-menu-mob {
 }
 
 header .btn-menu-mob div {
-    background-color: #969696;
+    background-color: #ffffff;
     height: 3px;
     margin: 10px 0;
     transition: .2s;
@@ -167,7 +169,7 @@ header .btn-menu-mob .line-menu-mob-2.ativo2 {
 header .menu-mobile {
     width: 0;
     height: 0;
-    background: linear-gradient(900deg, rgba(97, 97, 97, 0.445), rgb(0, 0, 75));
+    background: linear-gradient(900deg, rgba(0, 0, 0, 0.521), rgb(0, 70, 128));
     position: absolute;
     top: 0;
     right: 0;
@@ -177,7 +179,6 @@ header .menu-mobile {
     text-align: center;
     overflow: hidden;
     transition: .5s;
-    border-radius: 50px;
 }
 
 header .menu-mobile nav ul {
@@ -251,10 +252,7 @@ header .btn-contato button:hover,
 
 section.hero-site {
     height: 100vh;
-    background-image: url(img/20250818_181749\ \(1\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.829)), url(img/20250818_181749\ \(1\).jpg) no-repeat center center/cover;
     position: relative;
     background-position: center;
     color: #fff;
@@ -266,34 +264,48 @@ section.hero-site {
     height: 100%;
 }
 
-.hero-site{
-    display: flex; /* Coloca um embaixo do outro */
-    align-items: center;    /* Centraliza os filhos horizontalmente */
-    justify-content: center;/* Centraliza verticalmente (se a seção tiver altura) */
-    text-align: center;     /* Garante que as linhas de texto fiquem no meio */
-    width: 100%;            /* Ocupa a largura total da tela */
-    padding: 0 20px;        /* Evita que o texto encoste nas bordas no celular */
+.hero-site {
+    display: flex;
+    /* Coloca um embaixo do outro */
+    align-items: center;
+    /* Centraliza os filhos horizontalmente */
+    justify-content: center;
+    /* Centraliza verticalmente (se a seção tiver altura) */
+    text-align: center;
+    /* Garante que as linhas de texto fiquem no meio */
+    width: 100%;
+    /* Ocupa a largura total da tela */
+    padding: 0 20px;
+    /* Evita que o texto encoste nas bordas no celular */
 }
 
 /* 2. O Título */
 .hero h1 {
-    width: 100%;            /* Ocupa todo o espaço para o texto centralizar */
-    margin-left: 0;         /* REMOVA margens fixas se houver */
+    width: 100%;
+    /* Ocupa todo o espaço para o texto centralizar */
+    margin-left: 0;
+    /* REMOVA margens fixas se houver */
     margin-right: 0;
-    margin-bottom: 30px;    /* Espaço entre o título e o botão */
+    margin-bottom: 30px;
+    /* Espaço entre o título e o botão */
 }
 
 .hero a {
-    display: flex;          /* Faz o link também se comportar como flex */
+    display: flex;
+    /* Faz o link também se comportar como flex */
     justify-content: center;
     text-decoration: none;
-    width: 100%;            /* Garante que o link ocupe a largura para centralizar o botão */
+    width: 100%;
+    /* Garante que o link ocupe a largura para centralizar o botão */
 }
 
 .hero button {
-    margin: 0 auto;         /* O "auto" nas laterais força a centralização */
-    width: auto;            /* O botão terá o tamanho apenas do texto */
-    min-width: 200px;       /* Mas com um tamanho mínimo para ficar bonito */
+    margin: 0 auto;
+    /* O "auto" nas laterais força a centralização */
+    width: auto;
+    /* O botão terá o tamanho apenas do texto */
+    min-width: 200px;
+    /* Mas com um tamanho mínimo para ficar bonito */
     cursor: pointer;
 }
 
@@ -301,19 +313,19 @@ section.hero-site {
     padding: 20px;
     font-size: 4em;
     line-height: 70px;
-    font-weight: bold;
+    font-weight: 900;
     margin-top: 200px;
     color: #ffffff;
     animation: slideInFromLeft 1s ease-out forwards;
 }
 
 .hero-site .txt-hero h1 span {
-    font-weight: 500;
+    font-weight: 300;
     color: hsl(0, 0%, 100%);
 }
 
 .hero-site button:hover {
-    background: linear-gradient(to right, #0073ff, #008cff, #00aeff);
+    background: linear-gradient(to right, #003372, #00447c, #003f86);
     color: #000000;
     box-shadow: 0px 0px 16px #0059ff;
 }
@@ -334,8 +346,21 @@ section.hero-site {
     font-size: 20px;
     font-weight: 400;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: 200;
     margin-bottom: 30px;
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 12;
+    }
 }
 
 .hero-site .txt-hero p span {
@@ -366,18 +391,21 @@ section.na-tapuio {
 .na-tapuio .itens-container .img-itens img {
     max-width: 420px;
     border-radius: 12px;
-    box-shadow: 0px 12px 30px rgb(0, 60, 151);
-    transition: .5s; 
-    border: 1px solid #ffffff;   
+    box-shadow: 0px 0px 30px rgb(0, 60, 151);
+    transition: .5s;
+    border: 1px solid #ffffff;
 }
 
 .na-tapuio .itens-container .img-itens img:hover {
     transform: scale(1.05);
     transition: .5s;
-    box-shadow: 0px 12px 80px rgb(0, 102, 255);
+    box-shadow: 0px 0px 80px rgb(0, 102, 255) inset;
 }
 
 .na-tapuio .itens-container .txt-itens h3 {
+    background-color: #0000004d;
+    padding: 20px;
+    border-radius: 2px 20px;
     font-size: 3em;
     line-height: 50px;
     margin-bottom: 20px;
@@ -409,7 +437,7 @@ section.na-tapuio {
 
 section.contato {
     padding: 80px 0;
-    background: linear-gradient(135deg, #0a0f3c, #000000, #000c67);
+    background: linear-gradient(135deg, #34374b, #343c47, #000000);
 }
 
 
@@ -426,11 +454,17 @@ section.contato {
     line-height: 50px;
     font-weight: 400px;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .contato .txt-contato h3 span {
     display: block;
-    font-weight: 700;
+    font-weight: 100;
+}
+
+.contato .txt-contato p {
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .contato .icons-contato a {
@@ -446,7 +480,7 @@ section.contato {
     justify-content: space-between;
     padding: 0 60px;
     background-color: #000;
-    border: 2px solid #000f80;
+    border: 2px solid #ffffff;
     cursor: pointer;
     transition: .5s;
     border-radius: 12px;
@@ -457,76 +491,30 @@ section.contato {
     color: #fff;
 }
 
-.contato .icons-contato button:hover {
-    background-color: #727272a2;
+.ic-wa button:hover {
+    background-color: #25d366;
+    border: 2px solid #25d366;
+    border: 2px solid #000000;
+}
+
+.ic-in button:hover {
+    background-color: #e1306c;
+    border: 2px solid #e1306c;
+    border: 2px solid #000000;
+}
+
+.ic-tik button:hover {
+    background-color: #222222;
+    border: 2px solid #000000;
 }
 
 .contato .icons-contato p {
-    color: #fff;
+    color: #ffffff;
 }
 
 .contato .icons-contato button:hover i,
 .contato .icons-contato button:hover p {
     color: #fff;
-}
-
-section.assinatura {
-    background: linear-gradient(135deg, #4d4d4d, #000000, #787878);
-    justify-content: space-between;
-    text-align: center;
-    padding: 60px 0;
-
-    box-shadow: 10px 12px 0 rgb(231, 231, 231);
-}
-
-/* Seção Planos — Ajuste */
-.assinatura .planos {
-    display: flex;
-    flex-direction: column;
-    /* Alinha um em cima do outro */
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    text-align: center;
-
-}
-
-
-/* Imagem dos planos */
-.img-planos {
-    background: linear-gradient(135deg, #4d4d4d, #000000, #787878);
-    ;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 40px;
-    border: 2px solid #000000;
-    padding: 20px;
-    border-radius: 12px;
-    transition: .7s;
-    width: 100%;
-    max-width: 500px;
-    border-radius: 15px;
-}
-
-
-.assinatura .btn-planos button{
-    background-color: #000;
-  position: relative;
-    font-size: 20px;
-    background-color: #000;
-    border: 2px solid #000000;
-    color: #fff;
-    cursor: pointer;
-    transition: .5s;
-    border-radius: 12px;
-    padding: 17px;
-    overflow: hidden;
-}
-
-.assinatura .btn-planos button:hover{
-    background-color: #2e2e2e;
-    color: #ffffff;
 }
 
 .texto-colorido {
@@ -558,24 +546,50 @@ section.assinatura {
 
 section.sobre-tapuio {
     padding: 80px 0;
-    background: linear-gradient(135deg, #0a0f3c, #000000, #000c67);
+
+    background: linear-gradient(100deg,
+            #003449,
+            rgb(0, 48, 102));
+    background-size : 400% 400%;
+    animation: gradientBG 4s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
 }
 
 .txt-sobre,
 .sobre-texto {
-    display: inline-block;
-    width: 50%;
+    display: flex;
+    width: 100%;
+    height: 100%;
     margin-right: -4px;
     vertical-align: top;
+    margin-top: 50px;
+    gap: 30px;
+    margin-top: 20px;
 }
 
 .sobre-tapuio .txt-sobre {
-    position: sticky;
+    text-align: center;
+    justify-content: center;
     top: 50%;
 }
 
 .sobre-tapuio .txt-sobre h3 {
     font-size: 4em;
+    text-align: center;
     line-height: 60px;
     font-weight: 700;
 }
@@ -583,26 +597,34 @@ section.sobre-tapuio {
 
 
 .sobre-tapuio .txt-sobre h3 span {
-    display: block;
+    display: bloc;
     font-weight: 700;
 }
 
 .sobre-texto .sobre-box {
-    background-color: #00062f;
     display: flex;
     align-items: center;
+    background-color: #00000088;
     gap: 20px;
     margin-bottom: 40px;
-    border: 2px solid #001c7a;
+    border: 2px solid #fcfcfc;
     padding: 20px;
     border-radius: 12px;
     transition: .7s;
 }
 
-.sobre-texto .sobre-box:hover {
-    background-color: #000a226e;
-    cursor: pointer;
+.sobre-texto .sobre-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 2px;
+}
 
+.sobre-texto .sobre-box:hover {
+    background-color: #004c94fd;
+    cursor: pointer;
+    transform: scale(1);
 }
 
 .sobre-texto .sobre-box img {
@@ -612,6 +634,11 @@ section.sobre-tapuio {
 }
 
 .sobre-texto .sobre-box h4 {
+    background-color: #000000b6;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 12px;
     font-size: 1.5em;
     margin-bottom: 10px;
     text-align: center;
@@ -623,47 +650,134 @@ section.sobre-tapuio {
     text-align: center;
 }
 
-footer {
-    background: linear-gradient(100deg, #000000, rgb(0, 0, 0));
-    width: 100%;
-    text-align: center;
+
+/* Reset básico para o footer */
+
+
+.footer-moderno {
+    background-color: #050505;
     color: #fff;
-    padding: 12px;
+    padding: 60px 0 20px 0;
+    border-top: 1px solid #1a1a1a;
 }
 
-footer .top-footer button{
-    background-color: #ffffff42;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-
-    font-size: 20px;
-    transition: .5s;
-    cursor: pointer;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Importante para o responsivo */
+    gap: 40px;
 }
 
-
-footer .top-footer button:hover {
-    background-color: #ffffffb4;
-    color: #0037db;
+.footer-box {
+    flex: 1;
+    min-width: 250px;
 }
 
-footer .middle-footer {
-    margin: 10px;
-}   
-
-footer .middle-footer a {
+.footer-box h3 {
     color: #ffffff;
-    margin: 0 20px;
+    /* A cor azul que você usa no projeto */
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    position: relative;
 }
 
-footer .bottom-footer {
-    border-top: 2px solid #fff;
+/* Linha decorativa embaixo do título */
+.footer-box h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
 }
 
-footer .bottom-footer p {
+.footer-box p {
+    color: #a7a7a7;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 12px;
+}
+
+.footer-box ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
     color: #fff;
-    margin-top: 10px;
+    padding-left: 10px;
+    /* Efeito de deslizar no hover */
+}
+
+/* Ícones Sociais */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.icon-1 a:hover {
+    background-image: linear-gradient(45deg, #9000e4, #ea00ff, rgb(255, 0, 179));
+    transform: translateY(-5px);
+}
+
+.icon-2 a:hover {
+    background-image: linear-gradient(45deg, #51ff00, #00ff6a, rgb(0, 255, 13));
+    transform: translateY(-5px);
+}
+
+.icon-3 a:hover {
+    background-image: linear-gradient(45deg, #0f00e4, #006eff, rgb(38, 0, 255));
+    transform: translateY(-5px);
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #1a1a1a;
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* Responsivo para o footer */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-box h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .social-links {
+        justify-content: center;
+    }
 }
 
 
@@ -678,7 +792,11 @@ section.mapa {
 }
 
 .mapa iframe {
-    border-radius: 20px;
+    height: 450px;
+    border: none;
+    transition: .5s;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .mapa h3 {
@@ -686,28 +804,46 @@ section.mapa {
     font-weight: 700;
 }
 
-section.agendar{
-     background: linear-gradient(135deg, #0a0f3c, #000000, #000c67);
+section.agendar {
+    background: linear-gradient(135deg, #000000, #002350, #000000);
     justify-content: space-between;
     text-align: center;
     padding: 60px 0;
     box-shadow: 10px 12px 0 rgb(231, 231, 231);
+    height: 40vh;
 }
 
-.agendar-cte button{
+.agendar p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.agendar h2 {
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    margin-top: 20px;
+}
+
+.agendar-cte button {
     background-color: #000;
-  position: relative;
+    position: relative;
     font-size: 20px;
     background-color: #000;
-    border: 2px solid #00065b;
+    border: 2px solid #ffffff;
     color: #fff;
     cursor: pointer;
     transition: .5s;
-    border-radius: 12px;
-    padding: 10px;
+    border-radius: 100px;
+    padding: 20px;
+    margin-top: 40px;
+    width: 400px;
 }
 
-.agendar-cte button:hover{
-   background-color: #727272a2;
+.agendar-cte button:hover {
+    background: linear-gradient(to right, #003372, #00447c, #003f86);
     color: #ffffff;
 }
