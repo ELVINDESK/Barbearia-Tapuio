@@ -651,7 +651,7 @@ section.sobre {
 .experiencia-badge {
     position: absolute;
     top: -20px;
-    left: -32px;
+    left: 100px;
     background-color: #000000; /* Um tom levemente mais claro que o preto puro */
     padding: 20px;
     border-radius: 15px;
