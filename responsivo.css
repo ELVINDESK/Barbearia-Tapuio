@@ -34,6 +34,15 @@
 
             }
 
+            .hero-site .txt-hero button {
+                padding: 15px 35px;
+                /* Reduz um pouco o tamanho no celular */
+                font-size: 15px;
+                width: 100%;
+                /* Opcional: faz o botão ocupar a largura toda no mobile */
+                max-width: 300px;
+            }
+
 
             footer .top-footer button:hover {
                 background-color: #fff;
@@ -223,6 +232,72 @@
                 max-width: 400px;
             }
 
+            /* Badge Flutuante */
+            .experiencia-badge {
+                position: absolute;
+                top: -20px;
+                left: -32px;
+            }
+
+            section.sobre {
+                background-color: #0f0f0f;
+                /* Um tom levemente mais claro que o preto puro */
+                color: #fff;
+                height: 78vh;
+            }
+
+            .sobre .flex {
+                background-color: #0f0f0f;
+                /* Um tom levemente mais claro que o preto puro */
+                display: flex;
+                align-items: center;
+                gap: 80px;
+                padding: 10px 0;
+                border-radius: 0;
+                margin: 60px 0;
+            }
+
+            /* Container de Imagens */
+
+            /* Badge Flutuante */
+            .experiencia-badge {
+                position: absolute;
+                top: 20px;
+                left: -15px;
+                background-color: #000000;
+                /* Um tom levemente mais claro que o preto puro */
+                padding: 10px;
+                border-radius: 15px;
+                text-align: center;
+            }
+
+            .experiencia-badge .anos {
+                display: block;
+                font-size: 1em;
+                font-weight: 900;
+                color: #fff;
+            }
+
+            .experiencia-badge .texto {
+                font-size: 0.8em;
+                color: #fff;
+                text-transform: uppercase;
+            }
+
+            /* Tipografia do Texto */
+            .txt-sobre h2 {
+                font-size: 3em;
+                line-height: 1.1;
+                margin-bottom: 30px;
+            }
+
+            .txt-sobre p {
+                margin-bottom: 20px;
+                font-size: 1.1em;
+                color: #ccc;
+            }
+
+
             .hero-site .txt-hero h1 {
                 font-size: 3em;
                 /* tamanho ideal para celular */
@@ -260,7 +335,6 @@
                 header {
                     background: rgba(70, 70, 70, 0);
                     padding: 1px 20px;
-                    border: 1px solid rgba(77, 77, 77, 0.932);
                     box-shadow: var(--shadow-soft);
                 }
             }
@@ -336,6 +410,22 @@
                 100% {
                     background-position: 0% 50%;
                 }
+            }
+
+            .bento-grid {
+                grid-template-columns: 1fr;
+                /* Uma coluna só no celular */
+                grid-template-rows: auto;
+            }
+
+            .bento-item.grande {
+                grid-row: auto;
+                grid-column: auto;
+                height: 400px;
+            }
+
+            .bento-item {
+                height: 250px;
             }
         }
 
