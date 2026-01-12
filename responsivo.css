@@ -397,6 +397,55 @@
                 /* Impede que o bloco de texto seja maior que a tela */
             }
 
+            .na-tapuio {
+                padding: 100px 0;
+                background-color: #000;
+            }
+
+            .bento-text h3::after {
+                content: '';
+                display: block;
+                width: 410px;
+                height: 2px;
+                background-color: #b3b3b3;
+                margin: 10px 0;
+            }
+
+            .bento-text p {
+                color: #ccc;
+                margin-top: 10px;
+                font-size: 1em;
+            }
+
+            /* Título com degradê */
+            .na-tapuio h2.titulo {
+                font-size: 3.5em;
+                margin-bottom: 50px;
+                text-transform: uppercase;
+            }
+
+            /* A Mágica do Grid */
+            .bento-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 300px 300px;
+                gap: 20px;
+            }
+
+            .bento-item {
+                position: relative;
+                border-radius: 20px;
+                overflow: hidden;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                transition: 0.5s ease;
+            }
+
+            /* Faz o primeiro item ocupar 2 linhas */
+            .bento-item.grande {
+                grid-row: span 2;
+                grid-column: span 2;
+            }
+
 
             .hero-site .txt-hero button {
                 display: inline-flex;
