@@ -402,15 +402,6 @@
                 background-color: #000;
             }
 
-            .bento-text h3::after {
-                content: '';
-                display: block;
-                width: 410px;
-                height: 2px;
-                background-color: #b3b3b3;
-                margin: 10px 0;
-            }
-
             .bento-text p {
                 color: #ccc;
                 margin-top: 10px;
