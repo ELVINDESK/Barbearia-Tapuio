@@ -262,7 +262,7 @@ header .btn-contato button,
 /* Efeito ao passar o mouse (Hover) */
 .hero-site .txt-hero button:hover {
     background: linear-gradient(to right, #0056be, #0069be, #005dc7);
-    color: #fff;
+    color: #000000;
     transform: scale(1.05) translateY(-3px); /* Sobe levemente */
     box-shadow: 0 0px 30px rgba(0, 15, 130, 0.5); /* Brilho aumenta */
 }
@@ -367,7 +367,7 @@ section.hero-site {
 .hero-site button:hover {
     background: linear-gradient(to right, #003372, #00447c, #003f86);
     color: #000000;
-    box-shadow: 0px 0px 16px #0059ff;
+    box-shadow: 0 0 20px rgba(0, 55, 219, 0.4);
 }
 
 @keyframes slideInFromLeft {
@@ -419,6 +419,21 @@ section.hero-site {
 .na-tapuio {
     padding: 100px 0;
     background-color: #000;
+}
+
+.bento-text h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #b3b3b3;
+    margin: 10px 0;
+}
+
+.bento-text p {
+    color: #ccc;
+    margin-top: 10px;
+    font-size: 1em;
 }
 
 /* Título com degradê */
@@ -625,6 +640,11 @@ section.sobre {
     color: #ffffff;
 }
 
+.sobre .flex .txt-sobre h2 span {
+    font-weight: 200;
+    color: hsl(0, 0%, 100%);
+}
+
 /* Container de Imagens */
 .img-sobre-container {
     position: relative;
@@ -651,13 +671,13 @@ section.sobre {
 .experiencia-badge {
     position: absolute;
     top: -20px;
-    left: -32px;
+    left: -35px;
     background-color: #000000; /* Um tom levemente mais claro que o preto puro */
     padding: 20px;
     border-radius: 15px;
     text-align: center;
     transform: rotate(-10deg);
-    box-shadow: 10px 10px 30px rgba(88, 88, 88, 0.486);
+    box-shadow: 5px 5px 3px rgba(88, 88, 88, 0.486);
 }
 
 .experiencia-badge .anos {
@@ -683,7 +703,7 @@ section.sobre {
 .txt-sobre p {
     margin-bottom: 20px;
     font-size: 1.1em;
-    color: #ccc;
+    color: #acacac;
 }
 
 
@@ -775,7 +795,7 @@ section.sobre {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: #fff;
+    color: #ffffff;
     transition: 0.5s;
     text-decoration: none;
 }
@@ -893,4 +913,7 @@ section.agendar {
     background: linear-gradient(to right, #0056be, #0069be, #005dc7);
     color: #ffffff;
     transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 55, 219, 0.4);
+    color: #000000;
+    font-weight: 700;
 }

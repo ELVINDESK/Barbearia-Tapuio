@@ -316,6 +316,16 @@
                 display: block;
             }
 
+            .hero-site .txt-hero h1 {
+                padding: 20px;
+                font-size: 3em;
+                line-height: 70px;
+                font-weight: 900;
+                margin-top: 2px;
+                color: #ffffff;
+                animation: slideInFromLeft 1s ease-out forwards;
+            }
+
             .sobre-texto .sobre-box {
                 display: flex;
                 align-items: center;
