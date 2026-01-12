@@ -326,6 +326,25 @@
                 animation: slideInFromLeft 1s ease-out forwards;
             }
 
+            .hero a {
+                display: flex;
+                /* Faz o link também se comportar como flex */
+                justify-content: center;
+                text-decoration: none;
+                width: 100%;
+                /* Garante que o link ocupe a largura para centralizar o botão */
+            }
+
+            .hero button {
+                margin: 0 auto;
+                /* O "auto" nas laterais força a centralização */
+                width: auto;
+                /* O botão terá o tamanho apenas do texto */
+                min-width: 200px;
+                /* Mas com um tamanho mínimo para ficar bonito */
+                cursor: pointer;
+            }
+
             .sobre-texto .sobre-box {
                 display: flex;
                 align-items: center;
