@@ -402,6 +402,39 @@
                 background-color: #000;
             }
 
+            /* Centraliza o container do texto no card */
+            .bento-text {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* Garante que os itens internos alinhem ao centro */
+            }
+
+            /* Ajusta a linha (after) do h3 */
+            .bento-text h3::after {
+                margin: 10px auto;
+                /* 'auto' centraliza a barrinha */
+                width: 90px;
+                /* Opcional: um pouco menor no mobile para delicadeza */
+            }
+
+            .sobre .flex .txt-sobre h2 {
+                text-align: center;
+                /* Garante que o título esteja no meio */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* Alinha o conteúdo interno (incluindo o after) ao centro */
+            }
+
+            .sobre .flex .txt-sobre h2::after {
+                margin: 15px auto;
+                /* O 'auto' nas laterais centraliza a linha */
+                width: 60px;
+                /* Opcional: diminuir um pouco a linha no celular fica mais elegante */
+            }
+
             .bento-text p {
                 color: #ccc;
                 margin-top: 10px;

@@ -636,6 +636,15 @@ section.sobre {
     flex-wrap: wr;
 }
 
+.sobre .flex .txt-sobre h2::after {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 2px;
+    background-color: #b3b3b3;
+    margin: 10px 0;
+}
+
 .sobre .flex .txt-sobre h2 {
     color: #ffffff;
 }
